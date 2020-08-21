@@ -1,0 +1,19 @@
+{
+    "template": "https://github.com/nickderobertis/cookiecutter-pypi-sphinx",
+    "commit": "395785115897df0582bb9fc87af960ad3f84fda2",
+    "context": {
+        "cookiecutter": {
+            "package_name": "derobertis-project-logo",
+            "package_directory": "derobertis_project_logo",
+            "full_name": "Nick DeRobertis' Project Logos",
+            "repo_name": "derobertis-project-logo",
+            "repo_username": "nickderobertis",
+            "short_description": "Nick DeRobertis' Project Logo Collection and Generator",
+            "package_author": "Nick DeRobertis",
+            "author_email": "whoopnip@gmail.com",
+            "google_analytics_id": "",
+            "_template": "https://github.com/nickderobertis/cookiecutter-pypi-sphinx"
+        }
+    },
+    "directory": null
+}
