@@ -19,7 +19,7 @@ from derobertis_project_logo.triangle import Triangle
 class LogoModel(param.Parameterized):
     klass: Type[Logo] = param.ObjectSelector(objects=[Triangle])
     instance: Logo = param.ClassSelector(class_=Logo)
-    variable_name: str = param.String(default='logo')
+    project_name: str = param.String(default='my_project')
 
     def __init__(self, **params):
         if 'instance' not in params:
@@ -36,14 +36,14 @@ def get_view() -> Viewable:
     logo_model = LogoModel()
     svg = pn.pane.SVG(object=logo_model)
     editor = pn.widgets.Ace(
-        value=logo_model.instance.to_definition(logo_model.variable_name),
+        value=logo_model.instance.to_definition(logo_model.project_name),
         width=500
     )
 
     def randomize_color(event: Event):
         logo_model.instance.set_random_colors()
         svg.object = logo_model
-        editor.value = logo_model.instance.to_definition(logo_model.variable_name)
+        editor.value = logo_model.instance.to_definition(logo_model.project_name)
 
     random_colors_button = pn.widgets.Button(name='Randomize Colors')
     random_colors_button.on_click(randomize_color)

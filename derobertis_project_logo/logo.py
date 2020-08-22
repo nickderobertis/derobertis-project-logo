@@ -59,8 +59,15 @@ class Logo:
         with open(out_path, 'w') as f:
             f.write(rendered)
 
-    def color_definition(self, variable_name: str):
-        return '\n'.join([f'{variable_name}.set_color("{shape.name}", {shape.color.to_definition()})' for shape in self.shapes])
+    def color_definition(self, project_name: str):
+        variable_name = f'_{project_name}_logo'
+        return '\n'.join([f'{variable_name}.set_color("{shape.name}", "{shape.color.get_hex()}")' for shape in self.shapes])
 
-    def to_definition(self, variable_name: str) -> str:
-        return f'{variable_name} = {self.__class__.__name__}()' + '\n' + self.color_definition(variable_name)
+    def to_definition(self, project_name: str) -> str:
+        variable_name = f'_{project_name}_logo'
+        parts = [
+            f'{variable_name} = {self.__class__.__name__}()',
+            self.color_definition(project_name),
+            f'{project_name}_logo = ProjectLogo("{project_name}", {variable_name})'
+        ]
+        return '\n'.join(parts)
