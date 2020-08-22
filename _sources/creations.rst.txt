@@ -42,12 +42,12 @@ repo_splitter Logo
 .. image:: _static/generated_images/repo_splitter.svg
     :width: 700
     :alt: Logo for repo_splitter
-project_report Logo
+projectreport Logo
 ============================================================================
 
-.. image:: _static/generated_images/project_report.svg
+.. image:: _static/generated_images/projectreport.svg
     :width: 700
-    :alt: Logo for project_report
+    :alt: Logo for projectreport
 pd_utils Logo
 ============================================================================
 
@@ -72,3 +72,9 @@ processfiles Logo
 .. image:: _static/generated_images/processfiles.svg
     :width: 700
     :alt: Logo for processfiles
+mixins Logo
+============================================================================
+
+.. image:: _static/generated_images/mixins.svg
+    :width: 700
+    :alt: Logo for mixins
