@@ -37,7 +37,10 @@ class Logo:
 
     @property
     def render_dict(self) -> Dict[str, Any]:
-        colors = {f'color_{shape.name}': shape.color.get_hex() for shape in self.shapes}
+        colors = {
+            f'color_{shape.name}': shape.color.get_hex() if shape.color is not None else None
+            for shape in self.shapes
+        }
         all_variables = {
             **colors,
         }
@@ -61,7 +64,10 @@ class Logo:
 
     def color_definition(self, project_name: str):
         variable_name = f'_{project_name}_logo'
-        return '\n'.join([f'{variable_name}.set_color("{shape.name}", "{shape.color.get_hex()}")' for shape in self.shapes])
+        return '\n'.join([
+            f'{variable_name}.set_color("{shape.name}", "{shape.color.get_hex()}")'
+            if shape.color else '' for shape in self.shapes
+        ])
 
     def to_definition(self, project_name: str) -> str:
         variable_name = f'_{project_name}_logo'
