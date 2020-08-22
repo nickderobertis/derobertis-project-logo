@@ -29,6 +29,7 @@ github:
 	@make cleandoc
 	@./binder_requirements.sh
 	@./nb-examples.sh
+	@./generate-logo-creations.sh
 	@make doctest
 	@make autodoc
 	@make html

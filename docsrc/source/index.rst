@@ -15,6 +15,7 @@ To get started, look here.
 
    tutorial
    logos
+   creations
    auto_examples/index
 
 An overview
