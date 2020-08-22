@@ -1,7 +1,12 @@
 import random
 
-from colour import Color
+from colour import Color as LibColor
 
+
+class Color(LibColor):
+
+    def to_definition(self):
+        return f'Color("{self.get_hex()}")'
 
 
 def random_color_hex() -> str:

@@ -1,10 +1,9 @@
 import pathlib
 from typing import Sequence, Dict, Any, Optional
 
-from colour import Color
 from jinja2 import Environment, FileSystemLoader, Template
 
-from derobertis_project_logo.color import random_color_hex
+from derobertis_project_logo.color import random_color_hex, Color
 from derobertis_project_logo.shape import Shape
 
 TEMPLATE_DIR = pathlib.Path(__file__).parent / 'templates'
@@ -59,3 +58,9 @@ class Logo:
         rendered = self.render_str(extra_variables)
         with open(out_path, 'w') as f:
             f.write(rendered)
+
+    def color_definition(self, variable_name: str):
+        return '\n'.join([f'{variable_name}.set_color("{shape.name}", {shape.color.to_definition()})' for shape in self.shapes])
+
+    def to_definition(self, variable_name: str) -> str:
+        return f'{variable_name} = {self.__class__.__name__}()' + '\n' + self.color_definition(variable_name)

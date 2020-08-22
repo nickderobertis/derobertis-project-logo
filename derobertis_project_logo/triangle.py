@@ -1,5 +1,4 @@
-from colour import Color
-
+from derobertis_project_logo.color import Color
 from derobertis_project_logo.logo import Logo
 from derobertis_project_logo.shape import Shape
 
