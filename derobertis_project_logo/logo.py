@@ -11,6 +11,9 @@ jinja_env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
 
 
 class Logo:
+    """
+    The base class for logo images
+    """
 
     def __init__(self, template_name: str, shapes: Sequence[Shape]):
         self.template_name = template_name
