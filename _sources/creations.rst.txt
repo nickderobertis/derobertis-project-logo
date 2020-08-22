@@ -1,0 +1,74 @@
+Created Logos
+*****************
+pyexlatex Logo
+============================================================================
+
+.. image:: _static/generated_images/pyexlatex.svg
+    :width: 700
+    :alt: Logo for pyexlatex
+datacode Logo
+============================================================================
+
+.. image:: _static/generated_images/datacode.svg
+    :width: 700
+    :alt: Logo for datacode
+pyfileconf Logo
+============================================================================
+
+.. image:: _static/generated_images/pyfileconf.svg
+    :width: 700
+    :alt: Logo for pyfileconf
+finstmt Logo
+============================================================================
+
+.. image:: _static/generated_images/finstmt.svg
+    :width: 700
+    :alt: Logo for finstmt
+regtools Logo
+============================================================================
+
+.. image:: _static/generated_images/regtools.svg
+    :width: 700
+    :alt: Logo for regtools
+sensitivity Logo
+============================================================================
+
+.. image:: _static/generated_images/sensitivity.svg
+    :width: 700
+    :alt: Logo for sensitivity
+repo_splitter Logo
+============================================================================
+
+.. image:: _static/generated_images/repo_splitter.svg
+    :width: 700
+    :alt: Logo for repo_splitter
+project_report Logo
+============================================================================
+
+.. image:: _static/generated_images/project_report.svg
+    :width: 700
+    :alt: Logo for project_report
+pd_utils Logo
+============================================================================
+
+.. image:: _static/generated_images/pd_utils.svg
+    :width: 700
+    :alt: Logo for pd_utils
+bibtex_gen Logo
+============================================================================
+
+.. image:: _static/generated_images/bibtex_gen.svg
+    :width: 700
+    :alt: Logo for bibtex_gen
+objcache Logo
+============================================================================
+
+.. image:: _static/generated_images/objcache.svg
+    :width: 700
+    :alt: Logo for objcache
+processfiles Logo
+============================================================================
+
+.. image:: _static/generated_images/processfiles.svg
+    :width: 700
+    :alt: Logo for processfiles
