@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>derobertis_project_logo.gui &mdash; derobertis-project-logo 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_paramlinks.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery-dataframe.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> derobertis-project-logo
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial.html">Getting started with derobertis-project-logo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logos.html">Logo Filling Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../auto_examples/index.html">This is my gallery</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/modules.html">derobertis_project_logo</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">derobertis-project-logo</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>derobertis_project_logo.gui</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for derobertis_project_logo.gui</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="kn">from</span> <span class="nn">bokeh.events</span> <span class="kn">import</span> <span class="n">Event</span>
+
+<span class="n">ROOT_PATH</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">ROOT_PATH</span><span class="p">))</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Type</span>
+
+<span class="kn">import</span> <span class="nn">panel</span> <span class="k">as</span> <span class="nn">pn</span>
+<span class="kn">import</span> <span class="nn">param</span>
+<span class="kn">from</span> <span class="nn">panel.viewable</span> <span class="kn">import</span> <span class="n">Viewable</span>
+
+<span class="kn">from</span> <span class="nn">derobertis_project_logo.logo</span> <span class="kn">import</span> <span class="n">Logo</span>
+<span class="kn">from</span> <span class="nn">derobertis_project_logo.triangle</span> <span class="kn">import</span> <span class="n">Triangle</span>
+
+
+<div class="viewcode-block" id="LogoModel"><a class="viewcode-back" href="../../api/derobertis_project_logo.html#derobertis_project_logo.gui.LogoModel">[docs]</a><span class="k">class</span> <span class="nc">LogoModel</span><span class="p">(</span><span class="n">param</span><span class="o">.</span><span class="n">Parameterized</span><span class="p">):</span>
+    <span class="n">klass</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">Logo</span><span class="p">]</span> <span class="o">=</span> <span class="n">param</span><span class="o">.</span><span class="n">ObjectSelector</span><span class="p">(</span><span class="n">objects</span><span class="o">=</span><span class="p">[</span><span class="n">Triangle</span><span class="p">])</span>
+    <span class="n">instance</span><span class="p">:</span> <span class="n">Logo</span> <span class="o">=</span> <span class="n">param</span><span class="o">.</span><span class="n">ClassSelector</span><span class="p">(</span><span class="n">class_</span><span class="o">=</span><span class="n">Logo</span><span class="p">)</span>
+    <span class="n">project_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">param</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="s1">&#39;my_project&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="LogoModel.__init__"><a class="viewcode-back" href="../../api/derobertis_project_logo.html#derobertis_project_logo.gui.LogoModel.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">):</span>
+        <span class="k">if</span> <span class="s1">&#39;instance&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">Triangle</span><span class="p">()</span>
+            <span class="n">t</span><span class="o">.</span><span class="n">set_random_colors</span><span class="p">()</span>
+            <span class="n">params</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">params</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_repr_svg_</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance</span><span class="o">.</span><span class="n">render_str</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="get_view"><a class="viewcode-back" href="../../api/derobertis_project_logo.html#derobertis_project_logo.gui.get_view">[docs]</a><span class="k">def</span> <span class="nf">get_view</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Viewable</span><span class="p">:</span>
+    <span class="n">logo_model</span> <span class="o">=</span> <span class="n">LogoModel</span><span class="p">()</span>
+    <span class="n">svg</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">pane</span><span class="o">.</span><span class="n">SVG</span><span class="p">(</span><span class="nb">object</span><span class="o">=</span><span class="n">logo_model</span><span class="p">)</span>
+    <span class="n">editor</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">Ace</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">logo_model</span><span class="o">.</span><span class="n">instance</span><span class="o">.</span><span class="n">to_definition</span><span class="p">(</span><span class="n">logo_model</span><span class="o">.</span><span class="n">project_name</span><span class="p">),</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">500</span>
+    <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">randomize_color</span><span class="p">(</span><span class="n">event</span><span class="p">:</span> <span class="n">Event</span><span class="p">):</span>
+        <span class="n">logo_model</span><span class="o">.</span><span class="n">instance</span><span class="o">.</span><span class="n">set_random_colors</span><span class="p">()</span>
+        <span class="n">svg</span><span class="o">.</span><span class="n">object</span> <span class="o">=</span> <span class="n">logo_model</span>
+        <span class="n">editor</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">logo_model</span><span class="o">.</span><span class="n">instance</span><span class="o">.</span><span class="n">to_definition</span><span class="p">(</span><span class="n">logo_model</span><span class="o">.</span><span class="n">project_name</span><span class="p">)</span>
+
+    <span class="n">random_colors_button</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Randomize Colors&#39;</span><span class="p">)</span>
+    <span class="n">random_colors_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">randomize_color</span><span class="p">)</span>
+
+    <span class="c1"># logo_model.link(svg, instance=&#39;object&#39;)</span>
+
+    <span class="k">return</span> <span class="n">pn</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span>
+        <span class="n">pn</span><span class="o">.</span><span class="n">Row</span><span class="p">(</span><span class="n">logo_model</span><span class="o">.</span><span class="n">param</span><span class="p">,</span> <span class="n">editor</span><span class="p">),</span>
+        <span class="n">random_colors_button</span><span class="p">,</span>
+        <span class="n">svg</span>
+    <span class="p">)</span></div>
+
+<span class="n">get_view</span><span class="p">()</span><span class="o">.</span><span class="n">servable</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Nick DeRobertis
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

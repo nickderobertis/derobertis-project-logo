@@ -1,0 +1,75 @@
+derobertis\_project\_logo package
+=================================
+
+.. automodule:: derobertis_project_logo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+derobertis\_project\_logo.build module
+--------------------------------------
+
+.. automodule:: derobertis_project_logo.build
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.color module
+--------------------------------------
+
+.. automodule:: derobertis_project_logo.color
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.creations module
+------------------------------------------
+
+.. automodule:: derobertis_project_logo.creations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.gui module
+------------------------------------
+
+.. automodule:: derobertis_project_logo.gui
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.logo module
+-------------------------------------
+
+.. automodule:: derobertis_project_logo.logo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.project\_logo module
+----------------------------------------------
+
+.. automodule:: derobertis_project_logo.project_logo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.shape module
+--------------------------------------
+
+.. automodule:: derobertis_project_logo.shape
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.triangle module
+-----------------------------------------
+
+.. automodule:: derobertis_project_logo.triangle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
