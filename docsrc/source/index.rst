@@ -14,6 +14,7 @@ To get started, look here.
    :caption: Tutorial
 
    tutorial
+   logos
    auto_examples/index
 
 An overview
