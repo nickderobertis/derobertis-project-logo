@@ -29,6 +29,9 @@ if __name__ == '__main__':
     parser.add_argument('rst_folder', default='.')
     args = parser.parse_args()
 
+    if not os.path.exists(args.images_folder):
+        os.makedirs(args.images_folder)
+
     images_relative_folder = os.sep.join(args.images_folder.split(os.sep)[2:])
 
     build_logos(out_folder=args.images_folder)
