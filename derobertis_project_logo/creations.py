@@ -1,5 +1,6 @@
+from derobertis_project_logo.logos.nd import ND
 from derobertis_project_logo.project_logo import ProjectLogo
-from derobertis_project_logo.triangle import Triangle
+from derobertis_project_logo.logos.triangle import Triangle
 
 _pyexlatex_logo = Triangle()
 _pyexlatex_logo.set_color("1", "#9c6ff4")
@@ -208,5 +209,10 @@ _mixins_logo.set_color("11", "#e278b2")
 _mixins_logo.set_color("12", "#a131f4")
 _mixins_logo.set_color("border", "#000")
 mixins_logo = ProjectLogo("mixins", _mixins_logo)
+
+_nick_derobertis_site_logo = ND()
+_nick_derobertis_site_logo.set_color("background", "#e44f4f")
+_nick_derobertis_site_logo.set_color("foreground", "white")
+nick_derobertis_site_logo = ProjectLogo("nick_derobertis_site", _nick_derobertis_site_logo)
 
 LOGOS = [obj for obj in globals().values() if isinstance(obj, ProjectLogo)]
