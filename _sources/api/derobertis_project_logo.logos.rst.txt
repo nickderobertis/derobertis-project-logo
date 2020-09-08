@@ -1,0 +1,35 @@
+derobertis\_project\_logo.logos package
+=======================================
+
+.. automodule:: derobertis_project_logo.logos
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+derobertis\_project\_logo.logos.main module
+-------------------------------------------
+
+.. automodule:: derobertis_project_logo.logos.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.logos.nd module
+-----------------------------------------
+
+.. automodule:: derobertis_project_logo.logos.nd
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+derobertis\_project\_logo.logos.triangle module
+-----------------------------------------------
+
+.. automodule:: derobertis_project_logo.logos.triangle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

@@ -78,3 +78,9 @@ mixins Logo
 .. image:: _static/generated_images/mixins.svg
     :width: 700
     :alt: Logo for mixins
+nick_derobertis_site Logo
+============================================================================
+
+.. image:: _static/generated_images/nick_derobertis_site.svg
+    :width: 700
+    :alt: Logo for nick_derobertis_site

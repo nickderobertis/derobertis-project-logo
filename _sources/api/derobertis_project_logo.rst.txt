@@ -6,6 +6,13 @@ derobertis\_project\_logo package
    :undoc-members:
    :show-inheritance:
 
+Subpackages
+-----------
+
+.. toctree::
+
+   derobertis_project_logo.logos
+
 Submodules
 ----------
 
@@ -61,14 +68,6 @@ derobertis\_project\_logo.shape module
 --------------------------------------
 
 .. automodule:: derobertis_project_logo.shape
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-derobertis\_project\_logo.triangle module
------------------------------------------
-
-.. automodule:: derobertis_project_logo.triangle
    :members:
    :undoc-members:
    :show-inheritance:
