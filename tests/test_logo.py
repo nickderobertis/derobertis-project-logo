@@ -1,7 +1,11 @@
-from derobertis_project_logo.triangle import Triangle
+import pytest
+
+from derobertis_project_logo.logos.main import LOGO_CLASSES
 
 
-def test_generate_logo():
-    t = Triangle()
-    t.set_random_colors()
-    t.render()
+@pytest.mark.parametrize('LogoClass', LOGO_CLASSES)
+def test_generate_logo(LogoClass):
+    logo = LogoClass()
+    logo.set_random_colors()
+    logo.render()
+

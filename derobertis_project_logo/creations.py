@@ -1,5 +1,6 @@
+from derobertis_project_logo.logos.nd import ND
 from derobertis_project_logo.project_logo import ProjectLogo
-from derobertis_project_logo.triangle import Triangle
+from derobertis_project_logo.logos.triangle import Triangle
 
 _pyexlatex_logo = Triangle()
 _pyexlatex_logo.set_color("1", "#9c6ff4")
